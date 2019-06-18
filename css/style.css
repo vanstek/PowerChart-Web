@@ -1,170 +1,270 @@
 html, body {
-    padding: 1%;
-    height:100%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-#tabs{
-    margin: 0% 1.25% 1%;
-    border-width: 1px;
-    border-style: solid;
-    -webkit-box-shadow: 0px 8px 16px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 8px 16px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 4px 16px 2px rgba(0,0,0,0.75);
+    font-family: Arial, Helvetica, sans-serif;  
+    height: 100%;
+    
+    padding: 3px;
+    background-image: linear-gradient(65deg, #ffffff, #96dbd6);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #main{
-    height: 80%;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+   background-color: transparent;
+   border-radius: 8px;
+   overflow: hidden;
+   -webkit-box-shadow: 0px 30px 15px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 30px 15px 0px rgba(0,0,0,0.24);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.918);
+
 }
 
-#content-panel {
-    width: 80%;
-    height: 100%;
+#tabs{
+    font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
-    background-color: grey;
-    box-shadow: 10px 10px 5px #aaaaaa;
-    border-radius: 8px;
-    -webkit-box-shadow: 0px 8px 16px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 8px 16px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 8px 16px 2px rgba(0,0,0,0.75);
+    background-image: linear-gradient(rgb(66, 115, 221), rgb(21, 53, 121));
+}
+
+#tab-content{
+    background-color: rgb(51,159,218);
+    border: none;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    height: auto;
+    color: white;
+}
+
+    #tabs .nav{
+        background-color: rgb(21, 79, 110);
+        background-image: linear-gradient(rgb(21, 79, 110) 70%, rgb(17, 43, 99));
+        width: 100%;
+        border: none;   
+    }
+
+    #tabs .nav-item{
+        background-image: linear-gradient(rgb(66, 115, 221), rgb(21, 53, 121));
+    }
+
+
+    #tabs .nav-link{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: 0.2s;
+    }
+
+    #tabs a:hover.nav-link{
+        color: white;
+        background-color: rgb(28, 66, 150);
+        -moz-box-shadow:    inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow:         inset 0 0 10px #000000;
+        border-bottom-style: none;
+
+    }
+
+    #tabs a.nav-link.active{
+       background-color: rgb(51,159,218) !important;
+       background-image: linear-gradient(rgba(197, 232, 252, 0.692), rgb(51,159,218) 4%) !important;
+       
+       border-color: rgba(4, 33, 48, 0.603);
+       border-bottom-color:rgb(51,159,218);
+       border-top-right-radius: 8px;
+       border-top-left-radius: 8px;
+       border-bottom-style: solid;
+       box-shadow: none !important;
+       
+       
+       /* -moz-box-shadow:    inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow:         inset 0 0 10px #000000bb;
+        color: white ;
+        background-color: rgb(51,159,218);
+        background-image: linear-gradient(rgb(66, 115, 221), rgb(21, 53, 121));
+        */
+    }
+
+
+
+#content-panel {
     overflow: hidden;
+    box-sizing: border-box;
+}
+
+#display{
+    background-color: white;
+    border-left-style: solid;
+    border-left-color: rgb(74, 84, 92);
+    border-left-width: 3px;
+
 }
 
 #sidebar {
-    width: 15%;
-    height: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    position: relative;
-    overflow: hidden;
     background-color: rgb(74, 84, 92);
-    box-shadow: 10px 10px 5px #aaaaaa;
-    border-radius: 8px;
-    -webkit-box-shadow: 0px 8px 16px 2px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 8px 16px 2px rgba(0,0,0,0.75);
-    box-shadow: 0px 8px 16px 2px rgba(0,0,0,0.75);
-}
-
-
-#sidebar-title{
-    background-image: linear-gradient(rgb(51, 71, 82), rgb(26, 37, 43));
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(206, 206, 206);
-    width: 100%;
-    padding: 2% 7%;
-    box-sizing: border-box;
-    -webkit-box-shadow: 0px -5px 59px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px -5px 59px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px -5px 20px 0px rgba(0,0,0,0.75);
-    position: relative;
-}
-
-
-#sidebar-items{
+    padding: 0px;
     overflow-y: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow-y: auto; 
-    padding-left: 2%;
-    box-sizing: border-box;
+    overflow-y: scroll; 
+    padding-bottom: 5%;
 }
-   
-        #sidebar a{
-            background: grey;
-            color:rgba(255, 255, 255, 0.781);
-            background-color: rgb(74, 84, 92);
-            font-family: Arial, Helvetica, sans-serif;
-            width: 100%;
-            padding: 3%;
-            box-sizing: border-box;
-            border-top: 1px solid rgb(214, 214, 214);
-        }
 
-        #sidebar a:link, #sidebar a:visited{
-            text-decoration: none;
-        }
-        #sidebar a:hover, #sidebar a:active{
-            font-weight: bold;
-            background-image: linear-gradient(rgb(66,99,126), rgb(36, 55, 70));
-        }
-
-        .inactiveLink {
-            pointer-events: none;
-            cursor: default;
-            min-height: 24px;
-         }
+#sidebar .title{
+    position: -webkit-sticky;
+    color: white;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    word-break: all;
+    font-size: .9em;
+    padding: 4px;
+    background: linear-gradient(rgb(45, 88, 124), rgb(19, 51, 77)3%, 60%, rgb(22, 25, 27));
+    box-shadow: 0 0 6px #000000;
+}
          
-        
-#alerts-container{
-    box-sizing: border-box;
-    height: 100%;
+#menubar{
+    background: none;
     width: 100%;
-    background-color: white;
-    padding: 1% 2%; 
-}      
-
-
-#phqo-container{
-    height: 100%;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-    overflow: auto;
-    padding: 1%;
-    box-sizing: border-box;
+    box-shadow: 0 0 30px #000000;
 }
 
-.phqo-column{
-    display: flex;
-    width: 33.3%;
-    flex-direction: column;
-    align-content: flex-start;
-    box-sizing: border-box;
-    background-color: white;
-}
 
-    .phqo-item{
-        border-style: solid;
-        border-width: 1px;
-        border-top-left-radius: 8px;
-        word-wrap: break-word;
-        overflow: hidden;
-        margin: 1%;
+    #menubar .nav{
+        background-image: linear-gradient(rgb(66, 115, 221), rgb(21, 53, 121));
+        width: 100%;
     }
 
-        .phqo-header{
-            padding: 2%;
-            background-image: linear-gradient(rgb(255, 255, 255), rgb(92, 91, 91) 3%, 70%, rgb(66, 66, 66) 95%);
-            font-weight: 500;
-            display: flex;
-            align-content: flex-start;
-            align-items: center;
-            justify-content: space-between;
-            color: white;
-            word-wrap: break-word;
-            box-sizing: border-box;
-        }
-        .arrow-up {
-            width: 0; 
-            height: 0; 
-            border-left: 5px solid transparent;
-            border-right: 5px solid transparent;
-            border-bottom: 5px solid black;
-            cursor: pointer;
-        }
-    
-        .phqo-item-body{
-        word-wrap: break-word;
-        padding: 1%;
+    #menubar .nav-item{
+        background-color: #394048;
+        width: 100%;
+        word-break: break-word;
+        font-size: .9em;
+    }
+
+    #menubar .underline{
+        border-bottom-style: solid;
+        border-width: 1px;
+        border-bottom-color: #626e7c;
+        width: 100%;
         box-sizing: border-box;
+        margin-left: 8px;
+    }
+
+    #menubar .nav-link{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        transition: 0.2s;
+    }
+    #menubar a:hover.nav-link{
+        color: white;
+        background-color: rgb(73, 122, 145);
+        -moz-box-shadow:    inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow:         inset 0 0 10px #000000;
+    }
+
+    #menubar a.nav-link.active{
+        color: white !important;
+        background-image: linear-gradient(rgb(82, 131, 156), #194E66 4% 50%, rgb(15, 48, 63) 95%) !important;
+        box-shadow: none !important;
+        border-left-style: solid;
+        border-left-color: rgba(255, 255, 255, 0.507);
+        border-left-width: 8px;
+        
+    }
+
+.content-title{
+    background-image: linear-gradient(rgb(55, 100, 133), #1B496A 5%, 70%, rgb(10, 30, 44) 95%);
+    color: white;
+    padding: 5px 20px;
+    box-sizing: border-box;
+}
+
+
+
+      
+#phqo-app{
+    background: white;
+    overflow: scroll;
+    height: 80%;
+    margin: 0 -10px;
+}
+
+.card{
+    margin: 4px;
+    border-style: none;
+}
+
+.card > .card-header{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 9px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding: 2px 7px;
+    line-height: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card > .card-header > .options{
+    min-width: 29px;
+    box-sizing: content-box;
+    padding-left: 6px;
+    align-self: center;
+}
+
+.card > .card-body{
+    padding: 2px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+.card > .card-header.purple
+{
+    border-top-color: rgb(185, 81, 197);
+    background: #7E2987;
+    color: white;
+}
+
+        .card > .card-body.purple{
+            background: rgb(253, 234, 255);
+            border-color: #7E2987;
         }
+
+.card > .card-header.pink
+{
+    border-top-color: rgb(255, 214, 214);
+    background: #FF909D;
+}
+
+        .card > .card-body.pink{
+            background: rgb(248, 228, 230);
+            border-color: #FF909D;
+        }
+
+
+.card > .card-header.grey
+{
+    border-top-color: rgb(223, 230, 236);
+    background: #A1AAB2;
+    color: white;
+}
+
+        .card > .card-body.grey{
+            background: rgb(229, 233, 236);
+            border-color: #A1AAB2;
+        }
+
+  
+.accordion > .card {
+    margin: 0px;
+}
+
+.accordion > .card > .card-header{
+    border-radius: 0px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding: 0px;
+    overflow: hidden;
+}

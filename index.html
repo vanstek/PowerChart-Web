@@ -1,67 +1,158 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>PowerChart Web</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
-    <link rel="icon" type="image/png" href="./img/favicon-16x16.ico" sizes="16x16" />
-
+    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
 
+    <div id = "main" class = "container-fluid h-100">
+        <div id = "tabs" class = "row">
+            <ul class="nav nav-tabs">
+                <li>
+                  <a class="nav-link active" href="#">CRAYON, RED</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">PENCIL, BLACK</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#">PEN, BLACK</a>
+                </li>
+            </ul>
+        </div>
+        <div id = "tab-content" class = "row">
+            CRAYON, RED<br>
+            **Allergies not recorded**<br>
+            4Y (5/1/2019) F
+            
+        </div>
 
-<div id = "tabs">
-    tabs bar
-</div>
-
-<div id = "main">
-    <div id = "sidebar">
-        <div id = "sidebar-title">Menu</div>
-        <div id = "sidebar-items">
-            <a href>Provider Home/Quick Orders</a>
-            <a href>Orders</a>
-            <a href>PowerNote 2G</a>
-            <a href>Clinical Notes</a>
-            <a href>All Documents</a>
-            <a href>Outside Records</a>
-            <a href>Impression and Plan</a>
-            <a href>Lab</a>
-            <a href>Micro</a>
-            <a href>MicroViewer</a>
-            <a href>Reports</a>
-            <a href>Radiology</a>
-            <a href>Vital Signs</a>
-            <a href>IView/I&O</a>
-            <a href>All Data</a>
-            <a href>Med Review</a>
-            <a href>MAR Sum</a>
-            <a href>Patient Information</a>
-            <a href class = "inactiveLink"></a>
-            <a href>36 Hour View</a>
-            <a href>Allergies</a>
-            <a href>Caredex</a>
-            <a href>Communication View</a>
-            <a href>Free Text Documentation</a>
-            <a href>Placeholder</a>
-            <a href>Placeholder</a>
-            <a href>Placeholder</a>
-            <a href>Placeholder</a>
-            <a href>Placeholder</a>
-            <a href>Placeholder</a>
-            <a href>Placeholder</a>            
+        <div id = "content-panel" class = "row h-100">
+            <div id = "sidebar" class = "col-lg-1 col-md-2 col-3 h-100 flex-vertical">
+                    <div class = "title">
+                       Menu
+                    </div>
+                    <ul id = "menubar" class = "nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="phqo.html">Provider Home/Quick Orders</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Orders</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">PowerNote</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Clinical Notes</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">All Documents</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Outside Records</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Impression and Plan</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lab</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Micro</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MicroViewer</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reports</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Radiology</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Vital Signs</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">All Data</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Med Review</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mar Sum</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Patient Information</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <br>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">36 Hour View</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Allergies</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Caredex</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Communication View</a>
+                            <div class = "underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Free Text Documentation</a>
+                            <div class = "underline"></div>
+                        </li>
+                    </ul>
+            </div>
+            <div id = "display" class = "col-lg-11 col-md-10 col-9 h-100">
+                <div class = "row content-title justify-content-between">
+                            <div> ← → v | 🏠 content title</div>
+                            <div>
+                                🖥️Full Screen
+                                🖨️Print
+                                🔄1 minute ago
+                            </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-4">col1</div>
+                    <div class = "col-md-4">col2</div>
+                    <div class = "col-md-4">col3</div>
+                </div>
+            </div>
         </div>
     </div>
-    <div id = "content-panel">
-        test
-    </div>
-</div>
 
-
-
-
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
-
 </html>
