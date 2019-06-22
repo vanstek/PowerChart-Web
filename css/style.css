@@ -321,9 +321,7 @@ html, body {
 
 #alerts{
     padding: 10px;
-    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+    
 }
 
 #allergies{
@@ -344,4 +342,22 @@ html, body {
 
 #reports{
 
+}
+
+.table-borderless th {
+    border: 0;
+}
+    .table-container{
+         overflow: auto;
+    }
+
+.btn-light{
+    background: rgb(209, 209, 209);
+    border-color: rgb(179, 179, 179);
+}
+
+.thin-in-shadow{
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.75);
 }
