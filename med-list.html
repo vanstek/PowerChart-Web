@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.css">
 </head>
 
 <body>
@@ -226,13 +227,53 @@
                     <div>
                         <div onclick="fullScreenToggle()" style="display: inline-block; cursor: pointer;">🖥️Full Screen
                         </div>
-                        <button onclick="window.print();">🖨️Print</button>
+                        <button id="printpage" onclick="window.print();">🖨️Print</button>
                         🔄1 minute ago
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12 px-4 py-3">
-                        <div class="row">buttons buttonsbuttons buttonsbuttons buttonsbuttons buttonsbuttons buttonsbuttons buttonsbuttons buttonsbuttons buttons</div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="btn-toolbar align-middle" role="toolbar" aria-label="button toolbar allergies">
+                                    <button type="button" class="btn btn-light mr-1 mb-1"><i class="fa fa-plus fa-fw" aria-hidden="true"></i>Add</button>
+                                    <button type="button" class="btn btn-light mr-1 mb-1"><i class="fas fa-scroll fa-fw mr-1"></i>Document Medication by Hx</button>
+                                    <button type="button" class="btn btn-light mr-1 mb-1"><i class="fas fa-pills mr-1 fa-fw"></i>Reverse Allergy Check</button>
+                                    <div class="btn-group">
+                                        <button id="reconciliation-dropdown" type="button" class="btn btn-light dropdown-toggle align-self-center  mr-1 mb-1"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Reconciliation
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="reconciliation-dropwdown">
+                                                <a class="dropdown-item" href="#">Dropdown link</a>
+                                                <a class="dropdown-item" href="#">Dropdown link</a>
+                                            </div>
+                                    </div>
+                                    <button type="button" class="btn btn-light mr-1 mb-1">Check Interactions</button>
+                                    <button type="button" class="btn btn-light mr-1 mb-1">Reverse Allergy Check</button>
+                                    <div class="btn-group">
+                                            <button id="external-rx-history-dropdown" type="button" class="btn btn-light dropdown-toggle align-self-center  mr-1 mb-1"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    <i class="fas fa-book-medical fa-fw mr-1"></i>External Rx History
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="external-rx-history-dropdown">
+                                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                                    <a class="dropdown-item" href="#">Dropdown link</a>
+                                                </div>
+                                    </div>
+                                    <div class="btn-group">
+                                        <button id="rx-plans-dropdown" type="button" class="btn btn-light dropdown-toggle align-self-center mr-1 mb-1"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Rx Plans (0): No Benefit Found
+                                        </button>
+                                        <div class="dropdown-menu" aria-labelledby="rx-plans-dropdown">
+                                            <a class="dropdown-item" href="#">Dropdown link</a>
+                                            <a class="dropdown-item" href="#">Dropdown link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         
                         <div class="row">
                             <div class="col-12">
@@ -345,7 +386,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-9">
-                                                    <div>
+                                                    <div class="filter-display">
                                                         Displayed: All orders 5 days back
                                                     </div>
                                                     <div class="table-responsive">
@@ -399,7 +440,12 @@
                                                             </tbody>
                                                         </table>
                                                     </div>
-                                                    <div></div>
+                                                    <div class="filter-details">
+                                                        <i class="fa fa-step-backward fa-rotate-90 fa-fw"></i>Details
+                                                    </div>
+                                                    <div>
+                                                        <button type="button" class="btn btn-light float-right">Orders for Signature</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -509,7 +555,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-9">
-                                                    <div>
+                                                    <div class="filter-display">
                                                         Displayed: All orders 5 days back
                                                     </div>
                                                     <div class="table-responsive">
@@ -563,7 +609,12 @@
                                                             </tbody>
                                                         </table>
                                                     </div>
-                                                    <div></div>
+                                                    <div class="filter-details">
+                                                        <i class="fa fa-step-backward fa-rotate-90 fa-fw"></i>Details
+                                                    </div>
+                                                    <div>
+                                                        <button type="button" class="btn btn-light float-right">Orders for Signature</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

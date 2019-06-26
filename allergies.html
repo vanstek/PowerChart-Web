@@ -225,7 +225,7 @@
                     <div> ← → v | 🏠 content title</div>
                     <div>
                         <div onclick="fullScreenToggle()" style="display: inline-block; cursor: pointer;">🖥️Full Screen</div>
-                        <button onclick="window.print();">🖨️Print</button>
+                        <button id="printpage" onclick="window.print();">🖨️Print</button>
                         🔄1 minute ago
                     </div>
                 </div>
@@ -234,22 +234,23 @@
                         <div class="row">Mark All as Reviewed</div>
                         <div class="row">
                             <div class="btn-toolbar" role="toolbar" aria-label="button toolbar allergies">
-                                <button type="button" class="btn btn-light m-1">Add</button>
-                                <button type="button" class="btn btn-light m-1">Modify</button>
-                                <button type="button" class="btn btn-light m-1">No Known Allergies</button>
-                                <button type="button" class="btn btn-light m-1">No Known Medication Allergies</button>
-                                <button type="button" class="btn btn-light m-1">Reverse Allergy Check</button>
-                                <div class="ml-3">
+                                <button type="button" class="btn btn-light mr-1 mb-1"><i class="fa fa-plus fa-fw mr-1" aria-hidden="true"></i>Add</button>
+                                <button type="button" class="btn btn-light mr-1 mb-1"><i class="fa fa-pencil-square-o fa-fw mr-1" aria-hidden="true"></i>Modify</button>
+                                <button type="button" class="btn btn-light mr-1 mb-1"><i class="fa fa-circle-thin fa-fw mr-1" aria-hidden="true"></i>No Known Allergies</button>
+                                <button type="button" class="btn btn-light mr-1 mb-1"><i class="fa fa-circle-o-notch fa-fw mr-1" aria-hidden="true"></i>No Known Medication Allergies</button>
+                                <button type="button" class="btn btn-light mr-1 mb-1"><i class="fa fa-undo fa-fw mr-1" aria-hidden="true"></i>Reverse Allergy Check</button>
                                     <label for="allegeries-display">Display:</label>
-                                    <button id="allergies-display" type="button" class="btn btn-light mr-1 ml-1 dropdown-toggle" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">
-                                        Dropdown
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Dropdown link</a>
-                                        <a class="dropdown-item" href="#">Dropdown link</a>
+                                    <div class="btn-group">
+                                        <button id="allergies-display" type="button" class="btn btn-light mr-1 dropdown-toggle" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Active
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Dropdown link</a>
+                                            <a class="dropdown-item" href="#">Dropdown link</a>
+                                        </div>
                                     </div>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="row justify-content-md-center">

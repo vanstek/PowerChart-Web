@@ -87,6 +87,7 @@ html, body {
 #content-panel {
     overflow: hidden;
     box-sizing: border-box;
+    flex-grow: 1;
 }
 
 #display{
@@ -94,6 +95,7 @@ html, body {
     border-left-style: solid;
     border-left-color: rgb(74, 84, 92);
     border-left-width: 3px;
+    flex-grow: 1;
 
 }
 
@@ -404,3 +406,28 @@ html, body {
             padding-left: 5px;
             border-left: 1px dotted;
         }
+
+#printpage{
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-display{
+    border: 1px solid #D7D7D7;
+    background-color: #EBEBEB;
+    color: #3B85E5;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.filter-details{
+    border: 1px solid #D7D7D7;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#med-tabs-container{
+    height: 100%;
+}
