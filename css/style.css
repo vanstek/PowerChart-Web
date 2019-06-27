@@ -71,15 +71,6 @@ html, body {
        border-top-left-radius: 8px;
        border-bottom-style: solid;
        box-shadow: none !important;
-       
-       
-       /* -moz-box-shadow:    inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow:         inset 0 0 10px #000000bb;
-        color: white ;
-        background-color: rgb(51,159,218);
-        background-image: linear-gradient(rgb(66, 115, 221), rgb(21, 53, 121));
-        */
     }
 
 
@@ -87,7 +78,6 @@ html, body {
 #content-panel {
     overflow: hidden;
     box-sizing: border-box;
-    flex-grow: 1;
 }
 
 #display{
@@ -102,13 +92,12 @@ html, body {
 #sidebar {
     background-color: rgb(74, 84, 92);
     padding: 0px;
-    overflow-y: auto;
     width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    overflow-y: scroll; 
-    padding-bottom: 5%;
 }
 
 #sidebar .title{
@@ -128,7 +117,7 @@ html, body {
     background: none;
     width: 100%;
     box-shadow: 0 0 30px #000000;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 
@@ -153,6 +142,7 @@ html, body {
         margin-left: 8px;
     }
 
+
     #menubar .nav-link{
         color: white;
         font-family: Arial, Helvetica, sans-serif;
@@ -176,7 +166,7 @@ html, body {
         
     }
 
-.content-title{
+#content-title{
     background-image: linear-gradient(rgb(55, 100, 133), #1B496A 5%, 70%, rgb(10, 30, 44) 95%);
     color: white;
     padding: 5px 20px;
@@ -186,8 +176,6 @@ html, body {
       
 #phqo-app{
     background: white;
-    overflow: scroll;
-    height: 80%;
     margin: 0 -10px;
 }
 
@@ -317,13 +305,18 @@ html, body {
     margin-left: auto;
 }
 
+
 #application{
-    padding:5px;
+    overflow: auto;
 }
 
+
 #alerts{
-    padding: 10px;
-    
+    padding: 25px;
+}
+
+#alerts h5, #alerts h3{
+    font-weight: bold;
 }
 
 #allergies{
@@ -337,6 +330,35 @@ html, body {
 #lab{
 
 }
+
+
+    .flowsheet-row{
+        background-color: #EBEBEB;
+        padding: 5px;
+        border-radius: 4px;
+        margin-bottom: 4px;
+    }
+
+    .flowsheet-datebar{
+        background-color:#A0ADB7;
+        justify-content: space-between;
+        border-radius: 3px;
+        margin-bottom: 4px;
+        color: white;
+        overflow: hidden;
+    }
+        .flowsheet-datebar .arrows{
+            background-color: #85939C;
+            height: 100%;
+            background-image: linear-gradient(#A0ADB7, rgb(112, 120, 126));
+        }
+
+    .flowsheet-navigator{
+        background-color: #E2E6EA;
+    }
+    .flowsheet-results{
+        background-color: #EBEBEB;
+    }
 
 #phqo{
 

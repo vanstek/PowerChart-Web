@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.css">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
 
         </div>
 
-        <div id="content-panel" class="row h-100">
+        <div id="content-panel" class="row">
             <div id="sidebar" class="col-lg-1 col-md-2 col-3 h-100 flex-vertical">
                 <div class="title">
                     Menu
@@ -221,7 +222,7 @@
                 </ul>
             </div>
             <div id="display" class="col-lg-11 col-md-10 col-9 h-100">
-                <div class="row content-title justify-content-between">
+                <div id="content-title" class="row justify-content-between">
                     <div> ← → v | 🏠 content title</div>
                     <div>
                         <div onclick="fullScreenToggle()" style="display: inline-block; cursor: pointer;">🖥️Full Screen</div>
@@ -229,17 +230,30 @@
                         🔄1 minute ago
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12 px-4 py-3">
-                        <div class="row">buttons?</div>
-                        <div class="row">flowsheet dropdowns</div>
-                        <div class="row">date range? with back forward buttons</div>
+                <div class="row" id="application">
+                    <div class="col-12 px-4 py-2">
                         <div class="row">
-                            <div class="col-2">navigator</div>
+                            <i class="fa fa-bar-chart m-2" style="cursor: pointer;" aria-hidden="true"></i>
+                            <i class="fa fa-search m-2" style="cursor: pointer;"></i>
+                            <i class="fab fa-digital-ocean m-2" style="cursor: pointer;"></i>
+                        </div>
+                        <div class="row flowsheet-row">flowsheet dropdowns</div>
+                        <div class="row flowsheet-datebar">
+                            <div class="arrows">
+                                <i class="fas fa-caret-left mx-2" style="cursor: pointer;"></i>
+                                <i class="fas fa-caret-right mx-2" style="cursor: pointer;"></i>
+                            </div>
+                            <div>May 13, 2019</div>
+                            <div class="arrows">
+                                <i class="fas fa-caret-left mx-2" style="cursor: pointer;"></i>
+                                <i class="fas fa-caret-right mx-2" style="cursor: pointer;"></i>
+                            </div>
+                        </div>
+                        <div class="row border py-1 justify-content-around">
+                            <div class="col-2 flowsheet-navigator">navigator</div>
                             <div class="col-10">
                                 <div class="row">
-                                    <button>show more results</button>
-                                    
+                                    <button type="button" class="btn btn-secondary">show more results</button>
                                 </div>
                                 results
                             </div>

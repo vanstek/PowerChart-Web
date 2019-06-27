@@ -23,3 +23,10 @@ function fullScreenToggle() {
     }
   }
 }
+
+$(document).ready(function () {
+  $(window).resize(function () {
+    $("#content-panel").height($("#main").outerHeight(false) - $("#tabs").outerHeight(false) - $("#tab-content").outerHeight(false));
+    $("#application").height($("#display").outerHeight(false) - $("#content-title").outerHeight(false));
+  }).resize();
+});
