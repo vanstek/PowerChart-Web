@@ -6,7 +6,7 @@
 #main{
   background-color: transparent;
   border-radius: 8px;
-  overflow: hidden; 
+  overflow: hidden;
   -webkit-box-shadow: 0px 30px 15px 0px rgba(0,0,0,0.24);
   -moz-box-shadow: 0px 30px 15px 0px rgba(0,0,0,0.24);
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.918);
@@ -32,7 +32,7 @@
       background-color: rgb(21, 79, 110);
       background-image: linear-gradient(rgb(21, 79, 110) 70%, rgb(17, 43, 99));
       width: 100%;
-      border: none;   
+      border: none;
   }
 
   #tabs .nav-item{
@@ -59,7 +59,7 @@
   #tabs a.nav-link.active{
      background-color: rgb(51,159,218) !important;
      background-image: linear-gradient(rgba(197, 232, 252, 0.692), rgb(51,159,218) 4%) !important;
-     
+
      border-color: rgba(4, 33, 48, 0.603);
      border-bottom-color:rgb(51,159,218);
      border-top-right-radius: 8px;
@@ -81,7 +81,10 @@
   border-left-color: rgb(74, 84, 92);
   border-left-width: 3px;
   flex-grow: 1;
+}
 
+#display > div{
+    height: 100%;
 }
 
 #sidebar {
@@ -107,7 +110,7 @@
   background: linear-gradient(rgb(45, 88, 124), rgb(19, 51, 77)3%, 60%, rgb(22, 25, 27));
   box-shadow: 0 0 6px #000000;
 }
-       
+
 #menubar{
   background: none;
   width: 100%;
@@ -178,7 +181,7 @@
   box-sizing: border-box;
 }
 
-    
+
 #phqo-app{
   background: white;
   margin: 0 -10px;
@@ -256,7 +259,7 @@
   padding: 0px;
   background: rgba(255, 255, 255, 0.596);
   box-sizing: content-box;
-  margin: 8px;            
+  margin: 8px;
   border-width: 1px;
   border-style: solid;
   border-color: inherit;
@@ -298,7 +301,7 @@
   color: black;
   white-space:normal !important;
   word-break: break-word;
-  text-align: left; 
+  text-align: left;
 }
 
 .collapse-all{
@@ -312,7 +315,8 @@
 
 
 #application{
-  overflow: auto;
+  overflow-y: scroll;
+  height: calc(100% - 34px);
 }
 
 
