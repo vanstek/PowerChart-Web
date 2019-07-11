@@ -55,7 +55,7 @@ class App extends Component {
                     <div className="underline" />
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/powernote">PowerNote</NavLink>
+                    <NavLink className="nav-link" to="/powernote">PowerNote 2G</NavLink>
                     <div className="underline" />
                   </li>
                   <li className="nav-item">

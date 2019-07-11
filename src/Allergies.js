@@ -5,11 +5,11 @@ class Allergies extends Component{
         return(
             <div>
                 <div id="content-title" className="row justify-content-between">
-                    <div> ← → v | 🏠 content title</div>
+                    <div> <i class="fas fa-fw fa-chevron-left"></i> <i class="fas fa-fw fa-chevron-right"></i> <i class="fas fa-fw fa-caret-down mr-2 "></i> | <i class="fa fa-fw ml-2 fa-home" aria-hidden="true"></i> Allergies</div>
                     <div>
-                    <div onclick="fullScreenToggle()" style={{display: 'inline-block', cursor: 'pointer'}}>🖥️Full Screen</div>
-                    <button id="printpage" onclick="window.print();">🖨️Print</button>
-                    🔄1 minute ago
+                        <div onclick="fullScreenToggle()" style={{display: 'inline-block', cursor: 'pointer'}}><i class="fas fa-fw fa-compress ml-3"></i> Full Screen</div>
+                        <button id="printpage" onclick="window.print();"><i class="fas fa-fw fa-print ml-3"></i> Print</button>
+                        <i class="fas fa-fw fa-sync-alt"></i> 1 minute ago
                     </div>
                 </div>
                 <div className="row">
