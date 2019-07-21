@@ -32,3 +32,6 @@ $(document).ready(function () {
     $("#application").height($("#display").outerHeight(false) - $("#content-title").outerHeight(false));
   }).resize();
 });
+
+
+
