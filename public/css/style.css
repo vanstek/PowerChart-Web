@@ -336,8 +336,9 @@ html, body {
     .flowsheet-row{
         background-color: #EBEBEB;
         padding: 5px;
-        border-radius: 4px;
+        border-radius: 2px;
         margin-bottom: 4px;
+        border:solid 1px rgb(207, 207, 207);
     }
 
     .flowsheet-datebar{
@@ -356,6 +357,7 @@ html, body {
 
     .flowsheet-navigator{
         background-color: #E2E6EA;
+        min-height: 50px;
     }
     .flowsheet-results{
         background-color: #EBEBEB;

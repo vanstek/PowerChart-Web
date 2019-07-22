@@ -66,12 +66,24 @@ class Lab extends Component {
                       </div>
                   </div>
                   <div className="row border py-1 justify-content-around">
-                      <div className="col-2 flowsheet-navigator">navigator</div>
-                      <div className="col-10">
-                      <div className="row">
-                          <button type="button" className="btn btn-secondary">show more results</button>
+                      <div className="col-lg-2 col-md-3 d-flex flex-column">
+                        <div class="flowsheet-navigator">
+                          <div class="d-flex align-items-center justify-content-between px-1">
+                            <div>Navigator</div> <i class="fa fa-window-close" aria-hidden="true">
+                          </i></div>
+                          <div></div>
+                        </div>
+                        
                       </div>
-                      results
+                      <div className="col-lg-10 col-md-9">
+                        <div class="d-flex flex-column">
+                          <div>
+                            <button type="button" className="btn btn-secondary">show more results</button>
+                          </div>
+                          <div>
+                            results
+                          </div>
+                        </div>
                       </div>
                   </div>
                 </div>
