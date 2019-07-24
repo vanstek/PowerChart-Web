@@ -68,11 +68,16 @@ class Lab extends Component {
                   <div className="row border py-1 justify-content-around">
                       <div className="col-lg-2 col-md-3 d-flex flex-column">
                         <div class="flowsheet-navigator">
-                          <div class="d-flex align-items-center justify-content-between px-1">
-                            <div>Navigator</div> <i class="fa fa-window-close" aria-hidden="true">
-                          </i></div>
-                          <div></div>
+
+                          <div class="flowsheet-navigator-header d-flex align-items-center justify-content-between px-1">Navigator<i class="fa fa-window-close" aria-hidden="true"></i>
+                          </div> 
+                            
+                          <div class="px-1 flowsheet-navigator-body">
+                            body
+                          </div>
+
                         </div>
+                        
                         
                       </div>
                       <div className="col-lg-10 col-md-9">

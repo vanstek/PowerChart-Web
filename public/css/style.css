@@ -321,7 +321,7 @@ html, body {
 }
 
 #allergies{
-
+nav
 }
 
 #clinical-notes{
@@ -358,7 +358,21 @@ html, body {
     .flowsheet-navigator{
         background-color: #E2E6EA;
         min-height: 50px;
+        border-radius: 1px;
+        
     }
+
+        .flowsheet-navigator-header{
+            background: #AEC2CA;
+            width:100%;
+            border: solid 1px #AFB4B8
+        }
+        .flowsheet-navigator-body{
+            background: #E2E6EA;
+            width:100%;
+            border: solid 1px black;
+        }
+
     .flowsheet-results{
         background-color: #EBEBEB;
     }
