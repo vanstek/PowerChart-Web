@@ -1,15 +1,50 @@
 import React, { Component }  from 'react';
 
 class Phqo extends React.Component {
+
+  fullScreenToggle() { 
+
+    var browser = document.documentElement;
+    if (1 >= window.outerHeight - window.innerHeight){
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    }
+    else{
+      if (browser.requestFullscreen) {
+        browser.requestFullscreen();
+      } else if (browser.mozRequestFullScreen) { /* Firefox */
+        browser.mozRequestFullScreen();
+      } else if (browser.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+        browser.webkitRequestFullscreen();
+      } else if (browser.msRequestFullscreen) { /* IE/Edge */
+        browser.msRequestFullscreen();
+      }
+    }
+  }
+
+  componentDidMount(){
+    document.getElementById('fullscreen_button').addEventListener('click', this.fullScreenToggle);
+    //document.getElementById('printpage').addEventListener('click', window.print());
+    //document.getElementById('printpage').addEventListener('click', window.print());
+  }
+
+
     render() {
       return(
         <div>
             <div id="content-title" className="row justify-content-between">
                     <div> <i class="fas fa-fw fa-chevron-left"></i> <i class="fas fa-fw fa-chevron-right"></i> <i class="fas fa-fw fa-caret-down mr-2 "></i> | <i class="fa fa-fw ml-2 fa-home" aria-hidden="true"></i> Provider Home/Quick Orders</div>
                     <div>
-                        <div onclick="fullScreenToggle()" style={{display: 'inline-block', cursor: 'pointer'}}><i class="fas fa-fw fa-compress ml-3"></i> Full Screen</div>
-                        <button id="printpage" onclick="window.print();"><i class="fas fa-fw fa-print ml-3"></i> Print</button>
-              <i class="fas fa-fw fa-sync-alt ml-3"></i> 1 minute ago
+                        <div id="fullscreen_button" style={{display: 'inline-block', cursor: 'pointer'}}><i class="fas fa-fw fa-compress ml-3"></i> Full Screen</div>
+                        <button id="printpage" onClick={() => window.print()}><i class="fas fa-fw fa-print ml-3"></i> Print</button>
+                        <i class="fas fa-fw fa-sync-alt ml-3"></i> 1 minute ago
                     </div>
                 </div>
             <div className="row" id="application">
@@ -32,7 +67,7 @@ class Phqo extends React.Component {
                       <div className="card-header purple">
                         My Team V2 (Edit Profile)
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1 mr-1" />
                           <a data-toggle="collapse" href="#1"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -53,7 +88,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         My Team
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#2"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -69,7 +104,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         Patient Information
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#3"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -85,7 +120,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         C.H.R.I.S. Patient Attributes
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#4"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -103,7 +138,7 @@ class Phqo extends React.Component {
                       <div className="card-header ">
                         ICU ABCDEF Bundle
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#5"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -301,7 +336,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         Inpatient Medication
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#6"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -317,7 +352,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         New Orders (My Favorites)
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#7"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -333,7 +368,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         Documents (0)
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#8"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -349,7 +384,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         Diagnostic Studies (0)
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#9"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -367,7 +402,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         Readmissions Risk
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#10"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -383,7 +418,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         Goals of Care / Advance Care Planning
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#11"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -399,7 +434,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         Selected Labs
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#12"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -415,7 +450,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         Vital Signs
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#13"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -431,7 +466,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         Oxygenation and Ventilation
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#14"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
@@ -447,7 +482,7 @@ class Phqo extends React.Component {
                       <div className="card-header">
                         Intake and Ouput
                         <div className="options">
-                          <i className="fas fa-bars" />
+                          <i className="fas fa-bars mr-1" />
                           <a data-toggle="collapse" href="#15"><i className="fas fa-angle-up" /></a>
                         </div>
                       </div>
