@@ -53,7 +53,7 @@ class Lab extends Component {
                       <i className="fa fa-search m-2" style={{cursor: 'pointer'}} />
                       <i className="fab fa-digital-ocean m-2" style={{cursor: 'pointer'}} />
                   </div>
-                  <div className="row flowsheet-row">flowsheet dropdowns</div>
+                  <div className="row flowsheet-row">flowsheet drpdowns</div>
                   <div className="row flowsheet-datebar">
                       <div className="arrows">
                       <i className="fas fa-caret-left mx-2" style={{cursor: 'pointer'}} />
@@ -73,7 +73,7 @@ class Lab extends Component {
                           </div> 
                             
                           <div class="px-1 flowsheet-navigator-body">
-                            body
+                            
                           </div>
 
                         </div>
@@ -82,11 +82,11 @@ class Lab extends Component {
                       </div>
                       <div className="col-lg-10 col-md-9">
                         <div class="d-flex flex-column">
-                          <div>
-                            <button type="button" className="btn btn-secondary">show more results</button>
+                          <div class="flowsheet-results-header px-2 py-1">
+                            <button type="button" class="flowsheet-button">Show more results</button>
                           </div>
-                          <div>
-                            results
+                          <div class="flowsheet-results ">
+                            No results found.
                           </div>
                         </div>
                       </div>
