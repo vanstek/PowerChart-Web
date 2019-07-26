@@ -11,7 +11,8 @@ import ClinicalNotes from './Clinical-Notes';
 import Lab from './Lab';
 import MedList from './Med-List';
 import Phqo from './Phqo';
-import Reports from './Reports'
+import Reports from './Reports';
+import Radiology from './Radiology';
 
 
 
@@ -94,7 +95,7 @@ class App extends Component {
                     <div className="underline" />
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/radiology">Radiology</NavLink>
+                    <NavLink className="nav-link" to="/Radiology">Radiology</NavLink>
                     <div className="underline" />
                   </li>
                   <li className="nav-item">
@@ -236,6 +237,7 @@ class App extends Component {
                 <Route path="/med-list" component={MedList}/>
                 <Route path="/phqo" component={Phqo}/>
                 <Route path="/reports" component={Reports}/>
+                <Route path="/radiology" component={Radiology}/>
               </div>
             </HashRouter>
           </div>
