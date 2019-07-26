@@ -343,7 +343,7 @@ html, body {
         border-radius: 2px;
         margin-bottom: 4px;
         border:solid 1px rgb(207, 207, 207);
-    }
+        overflow: hidden;
 
     .flowsheet-datebar{
         background-color:#A0ADB7;

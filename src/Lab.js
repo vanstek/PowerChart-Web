@@ -54,18 +54,18 @@ class Lab extends Component {
                       <i className="fab fa-digital-ocean m-2" style={{cursor: 'pointer'}} />
                   </div>
                   <div className="row flowsheet-row">
-                    <div class="col-sm-3">                     
-                          <form>
-                          <div class="nowrap">Flowsheet: &nbsp;</div>
+                                      
+                          <form class="mx-2 my-1">
+                          <div class="nowrap ">Flowsheet: &nbsp;</div>
                             <select name="flowsheet-selection">
                                 <option value="laboratory">Laboratory</option>
                                 <option value="reports">Reports</option>
                                 <option value="change">Option 3</option>
                             </select>  
                           </form>
-                    </div>
-                    <div class="col-sm-3">                     
-                          <form>
+                   
+                                   
+                          <form class="mx-2 my-1">
                           <div>Level: &nbsp;</div>
                             <select name="flowsheet-level">
                                 <option value="change_me">Option 1</option>
@@ -73,17 +73,29 @@ class Lab extends Component {
                                 <option value="placeholder">Option 3</option>
                             </select>  
                           </form>
-                    </div>
-                    <div class="col-sm-3">                     
-                      <form class="row">
-                        <div class="col-sm-4"><div><input type="radio" name="display" value="table" checked></input>Table</div></div>
-                        <div class="col-sm-4"><div><input type="radio" name="display" value="group" checked></input>Group</div></div>
-                        <div class="col-sm-4"><div><input type="radio" name="display" value="list" checked></input>List</div></div>
+                   
+                                
+                      <form class="d-flex flex-row align-items-center mx-2 my-1">
+                        
+                          <div class="mx-1">
+                            <input type="radio" name="display" value="table" checked></input>Table
+                          </div>
+                        
+
+                        
+                          <div class="mx-1">
+                            <input type="radio" name="display" value="group" checked></input>Group
+                          </div>
+                      
+
+                       
+                          <div class="mx-1">
+                            <input type="radio" name="display" value="list" checked></input>List
+                          </div>
+                        
                       </form>
-                    </div>
-                    <div class="col-sm-3">                     
-                          
-                    </div>
+                    
+                   
                   </div>
                   <div className="row flowsheet-datebar">
                       <div className="arrows">
