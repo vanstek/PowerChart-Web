@@ -331,6 +331,11 @@ html, body {
 
 }
 
+.nowrap{
+    white-space:nowrap;
+}
+
+
 
     .flowsheet-row{
         background-color: #EBEBEB;
@@ -382,7 +387,7 @@ html, body {
     }
 
     .flowsheet-results{
-        background-color: white;
+        background-color: white !important;
         border: solid 1px black;
         min-height: 50vh;
 

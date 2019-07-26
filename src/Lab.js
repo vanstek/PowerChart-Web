@@ -53,7 +53,38 @@ class Lab extends Component {
                       <i className="fa fa-search m-2" style={{cursor: 'pointer'}} />
                       <i className="fab fa-digital-ocean m-2" style={{cursor: 'pointer'}} />
                   </div>
-                  <div className="row flowsheet-row">flowsheet drpdowns</div>
+                  <div className="row flowsheet-row">
+                    <div class="col-sm-3">                     
+                          <form>
+                          <div class="nowrap">Flowsheet: &nbsp;</div>
+                            <select name="flowsheet-selection">
+                                <option value="laboratory">Laboratory</option>
+                                <option value="reports">Reports</option>
+                                <option value="change">Option 3</option>
+                            </select>  
+                          </form>
+                    </div>
+                    <div class="col-sm-3">                     
+                          <form>
+                          <div>Level: &nbsp;</div>
+                            <select name="flowsheet-level">
+                                <option value="change_me">Option 1</option>
+                                <option value="another_placeholder">Option 2</option>
+                                <option value="placeholder">Option 3</option>
+                            </select>  
+                          </form>
+                    </div>
+                    <div class="col-sm-3">                     
+                      <form class="row">
+                        <div class="col-sm-4"><div><input type="radio" name="display" value="table" checked></input>Table</div></div>
+                        <div class="col-sm-4"><div><input type="radio" name="display" value="group" checked></input>Group</div></div>
+                        <div class="col-sm-4"><div><input type="radio" name="display" value="list" checked></input>List</div></div>
+                      </form>
+                    </div>
+                    <div class="col-sm-3">                     
+                          
+                    </div>
+                  </div>
                   <div className="row flowsheet-datebar">
                       <div className="arrows">
                       <i className="fas fa-caret-left mx-2" style={{cursor: 'pointer'}} />
