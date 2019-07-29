@@ -180,6 +180,10 @@ html, body {
     margin: 0 -10px;
 }
 
+.phqo-buttons{
+    border-bottom: 1px solid #D2D3D4
+}
+
 .col-md-4 > .card{
     margin: 4px;
     border: 1px solid;
