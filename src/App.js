@@ -44,7 +44,7 @@ class App extends Component {
           </div>
           <div id="content-panel" className="row">
            <HashRouter>
-                <div id="sidebar" className="col-lg-1 col-md-2 col-3 h-100 flex-vertical">
+                <div id="sidebar" className="col-lg-2 col-3 h-100 flex-vertical">
                 <div className="title">
                   Menu
                 </div>
@@ -228,7 +228,7 @@ class App extends Component {
                 </ul>
               </div>
               
-              <div id="display" className="col-lg-11 col-md-10 col-9 h-100">
+              <div id="display" className="col-lg-10 col-9 h-100">
                 <Route path="/alerts" component={Alerts}/>
                 <Route path="/allergies" component={Allergies}/>
                 <Route path="/clinical-notes" component={ClinicalNotes}/>
@@ -240,7 +240,6 @@ class App extends Component {
             </HashRouter>
           </div>
     </div>
-
       );
   }  
 }

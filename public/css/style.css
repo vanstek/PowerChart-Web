@@ -343,7 +343,7 @@ html, body {
         border-radius: 2px;
         margin-bottom: 4px;
         border:solid 1px rgb(207, 207, 207);
-        overflow: hidden;
+    }
 
     .flowsheet-datebar{
         background-color:#A0ADB7;
@@ -352,7 +352,12 @@ html, body {
         margin-bottom: 4px;
         color: white;
         overflow: hidden;
+        min-width: 75%;
     }
+        .datebar-date{
+            word-wrap: break-word;
+        }
+
         .flowsheet-datebar .arrows{
             background-color: #85939C;
             height: 100%;
@@ -412,7 +417,11 @@ html, body {
           transition: .1s;
         }
 
-
+        .square{
+            height: 18px;
+            width: 18px;
+            padding: 0px;
+        }
     
 
 
