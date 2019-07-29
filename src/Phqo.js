@@ -41,17 +41,16 @@ class Phqo extends React.Component {
         <div>
             <div id="content-title" className="row justify-content-between">
                     <div> 
-                        <i class="fas fa-fw fa-chevron-left"></i> 
-                        <i class="fas fa-fw fa-chevron-right"></i> 
-                        <i class="fas fa-fw fa-caret-down mr-2 "></i> 
+                        <i className="fas fa-fw fa-chevron-left"></i> 
+                        <i className="fas fa-fw fa-chevron-right"></i> 
+                        <i className="fas fa-fw fa-caret-down mr-2 "></i>
                         | 
-                        <i class="fa fa-fw ml-2 fa-home" aria-hidden="true"></i> 
-                        Provider Home/Quick Orders
+                        <i className="fa fa-fw ml-2 fa-home" aria-hidden="true"></i> Provider Home/Quick Orders       
                     </div>
                     <div>
                         <div id="fullscreen_button" style={{display: 'inline-block', cursor: 'pointer'}}><i class="fas fa-fw fa-compress ml-3"></i> Full Screen</div>
                         <button id="printpage" onClick={() => window.print()}><i class="fas fa-fw fa-print ml-3"></i> Print</button>
-                        <i class="fas fa-fw fa-sync-alt ml-3"></i> 1 minute ago
+                        <i className="fas fa-fw fa-sync-alt ml-3"></i> 1 minute ago
                     </div>
             </div>
             <div className="row" id="application">
@@ -59,10 +58,10 @@ class Phqo extends React.Component {
                 <div className="row justify-content-between py-1 px-1 phqo-buttons">
                   <div className="d-flex flex-row  ">
                     <div>
-                      <i class="fas mx-1 fa-binoculars"></i>
-                      <i class="fas mx-1 fa-search-minus"></i>
-                      <i class="fas mx-1 fa-search-plus"></i>
-                      <i class="fas mx-1 fa-home"></i>
+                      <i className="fas mx-1 fa-binoculars"></i>
+                      <i className="fas mx-1 fa-search-minus"></i>
+                      <i className="fas mx-1 fa-search-plus"></i>
+                      <i className="fas mx-1 fa-home"></i>
                     </div>
                   </div>
                   <div className="collapse-all ml-auto" data-toggle="collapse" data-target=".col-md-4>.card>.multi-collapse">Expand/Collapse All

@@ -181,7 +181,7 @@ html, body {
 }
 
 .phqo-buttons{
-    border-bottom: 1px solid #D2D3D4
+    border-bottom: 1px solid #D2D3D4;
 }
 
 .col-md-4 > .card{
@@ -324,12 +324,39 @@ html, body {
     font-weight: bold;
 }
 
+
+
 #allergies{
 }
+
+
 
 #clinical-notes{
 
 }
+
+        .clin-notes-nav{
+            background-color: #E2E6EA;
+            min-height: 50vh;
+        }
+
+        .clin-notes-results{
+            background-color: #E2E6EA;
+        }
+
+            .clin-notes-results-body{
+                background-color: white;
+                border: solid 1px #939495;
+                overflow-y: scroll;
+                height: 100px;
+            }
+
+            .clin-notes-results-actions{
+                height: 100px;
+                border: solid 1px #939495;
+                background-color:white;
+            }
+
 
 #lab{
 
