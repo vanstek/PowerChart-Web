@@ -97,15 +97,15 @@ class Lab extends Component {
                     
                    
                   </div>
-                  <div className="row flowsheet-datebar">
-                      <div className="arrows">
-                      <i className="fas fa-caret-left mx-2" style={{cursor: 'pointer'}} />
-                      <i className="fas fa-caret-right mx-2" style={{cursor: 'pointer'}} />
+                  <div className="row no-gutters flowsheet-datebar">
+                      <div className="arrows col-2 text-center">
+                        <i className="fas fa-caret-left w-50" style={{cursor: 'pointer'}} />
+                        <i className="fas fa-caret-right w-50 border-left" style={{cursor: 'pointer'}} />
                       </div>
-                      <div className="datebar-date">Last 100 results in the past 3 years</div>
-                      <div className="arrows">
-                      <i className="fas fa-caret-left mx-2" style={{cursor: 'pointer'}} />
-                      <i className="fas fa-caret-right mx-2" style={{cursor: 'pointer'}} />
+                      <div className="datebar-date col-8 text-center px-1">Last 100 results in the past 3 years</div>
+                        <div className="arrows col-2 text-center">
+                        <i className="fas fa-caret-left w-50" style={{cursor: 'pointer'}} />
+                        <i className="fas fa-caret-right w-50 border-left" style={{cursor: 'pointer'}} />
                       </div>
                   </div>
                   <div className="row border py-1 justify-content-around">
