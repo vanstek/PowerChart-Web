@@ -60,26 +60,26 @@ class Lab extends Component {
                       <i className="far fa-copy m-1" style={{cursor: 'pointer'}} />
                   </div>
                 
-                  <div className="row flowsheet-datebar">
-                      <div className="arrows">
-                      <i className="fas fa-caret-left mx-2" style={{cursor: 'pointer'}} />
-                      <i className="fas fa-caret-right mx-2" style={{cursor: 'pointer'}} />
+                  <div className="row no-gutters flowsheet-datebar">
+                      <div className="arrows col-2 text-center">
+                        <i className="fas fa-caret-left w-50" style={{cursor: 'pointer'}} />
+                        <i className="fas fa-caret-right w-50 border-left" style={{cursor: 'pointer'}} />
                       </div>
-                      <div className="datebar-date">Friday, May 20th, 2016 - Monday, May 20, 2019, 0 out of 0 documents are accessible.</div>
-                      <div className="arrows">
-                      <i className="fas fa-caret-left mx-2" style={{cursor: 'pointer'}} />
-                      <i className="fas fa-caret-right mx-2" style={{cursor: 'pointer'}} />
+                      <div className="datebar-date col-8 text-center px-1">Friday, May 20th, 2016 - Monday, May 20, 2019, 0 out of 0 documents are accessible.</div>
+                        <div className="arrows col-2 text-center">
+                        <i className="fas fa-caret-left w-50" style={{cursor: 'pointer'}} />
+                        <i className="fas fa-caret-right w-50 border-left" style={{cursor: 'pointer'}} />
                       </div>
                   </div>
                   <div className="row border py-1 justify-content-around">
-                        <div className="col-lg-2 col-md-3 d-flex flex-column">
+                        <div className="col-lg-2 col-md-3 d-flex flex-column px-md-3 px-sm-5 px-4 pb-0 pb-2">
                           <div className="clin-notes-nav">
                           </div>
                         </div>
                         <div className="col-lg-10 col-md-9">
-                          <div className="d-flex flex-column clin-notes-results">
-                            <div className="clin-notes-results-body"></div>
-                            <div className="clin-notes-results-actions"></div>
+                          <div className="d-flex flex-column align-baseline h-100 clin-notes-results ">
+                            <div className="clin-notes-results-body h-75"></div>
+                            <div className="clin-notes-results-actions h-25"></div>
                           </div>
                         </div>
                     </div>

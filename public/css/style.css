@@ -341,18 +341,18 @@ html, body {
         }
 
         .clin-notes-results{
-            background-color: #E2E6EA;
+            
         }
 
             .clin-notes-results-body{
                 background-color: white;
                 border: solid 1px #939495;
                 overflow-y: scroll;
-                height: 100px;
+                min-height: 200px !important;  
             }
 
             .clin-notes-results-actions{
-                height: 100px;
+                min-height: 150px !important;
                 border: solid 1px #939495;
                 background-color:white;
             }
@@ -384,16 +384,20 @@ html, body {
         color: white;
         overflow: hidden;
         min-width: 75%;
+        height: 22px;
     }
         .datebar-date{
             word-wrap: break-word;
+            overflow: auto;
+            height: 100%;
         }
 
-        .flowsheet-datebar .arrows{
-            background-color: #85939C;
-            height: 100%;
-            background-image: linear-gradient(#A0ADB7, rgb(112, 120, 126));
-        }
+      
+          .flowsheet-datebar .arrows{
+                background-color: #85939C;
+                background-image: linear-gradient(#A0ADB7, rgb(112, 120, 126));
+            }  
+      
 
     .flowsheet-navigator{
         background-color: transparent !important; 
