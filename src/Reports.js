@@ -65,7 +65,7 @@ class Lab extends Component {
                             <button className="flowsheet-button square m-1">...</button>
                           </form>
                     
-                          <form className="mx-2 my-1  d-flex flex-row">
+                          <form className="mx-2 my-1 d-flex flex-row  align-items-center">
                           <div>Level: &nbsp;</div>
                             <select name="flowsheet-level">
                                 <option value="change_me">Option 1</option>
@@ -97,7 +97,7 @@ class Lab extends Component {
                     
                    
                   </div>
-                  <div className="row no-gutters flowsheet-datebar">
+                  <div className="row flowsheet-datebar">
                       <div className="arrows col-2 text-center">
                         <i className="fas fa-caret-left w-50" style={{cursor: 'pointer'}} />
                         <i className="fas fa-caret-right w-50 border-left" style={{cursor: 'pointer'}} />

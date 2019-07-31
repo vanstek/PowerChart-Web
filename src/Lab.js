@@ -53,10 +53,9 @@
                         <i className="fa fa-search m-2" style={{cursor: 'pointer'}} />
                         <i className="fab fa-digital-ocean m-2" style={{cursor: 'pointer'}} />
                     </div>
-                    <div className="row flowsheet-row">
-                                        
+                    <div className="row flowsheet-row"> 
                             <form className="mx-2 my-1 align-items-center d-flex flex-row">
-                            <div className="nowrap ">Flowsheet: &nbsp;</div>
+                            <div className="nowrap">Flowsheet: &nbsp;</div>
                               <select name="flowsheet-selection">
                                   <option value="laboratory">Laboratory</option>
                                   <option value="reports">Reports</option>
@@ -97,7 +96,7 @@
                       
                     
                     </div>
-                    <div className="row no-gutters flowsheet-datebar">
+                    <div className="row flowsheet-datebar">
                       <div className="arrows col-2 text-center">
                         <i className="fas fa-caret-left w-50" style={{cursor: 'pointer'}} />
                         <i className="fas fa-caret-right w-50 border-left" style={{cursor: 'pointer'}} />

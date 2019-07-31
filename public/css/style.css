@@ -337,12 +337,31 @@ html, body {
 
         .clin-notes-nav{
             background-color: #E2E6EA;
-            min-height: 50vh;
+            border: solid 1px #939495;
+            min-height: 70vh;
+            overflow: auto;
         }
 
+            .clin-notes-nav-results{
+                background-color: white;
+                border: solid 1px #939495;
+                font-size: 12px;
+                overflow:auto;
+                min-height: 60vh;
+                
+            }
+
+
+            .clin-notes-nav-options{
+                font-size: 12px;
+                overflow:auto;
+            }
+
+
+
         .clin-notes-results{
-            
-        }
+            min-height: 70vh;
+            }
 
             .clin-notes-results-body{
                 background-color: white;
@@ -355,8 +374,17 @@ html, body {
                 min-height: 150px !important;
                 border: solid 1px #939495;
                 background-color:white;
+                overflow: auto;
             }
 
+            .actions-table{
+                font-size: 12px;
+
+            }
+
+            .actions-table thead th{
+                text-align: center;
+            }
 
 #lab{
 
@@ -383,7 +411,6 @@ html, body {
         margin-bottom: 4px;
         color: white;
         overflow: hidden;
-        min-width: 75%;
         height: 22px;
     }
         .datebar-date{
@@ -417,7 +444,7 @@ html, body {
             width:100%;
             box-sizing: border-box;
             border: solid 1px black;
-            min-height: 50vh;
+            min-height: 65vh;
         }
 
     .flowsheet-results-header{
@@ -429,7 +456,7 @@ html, body {
     .flowsheet-results{
         background-color: white !important;
         border: solid 1px black;
-        min-height: 50vh;
+        min-height: 65vh;
 
     }
 
